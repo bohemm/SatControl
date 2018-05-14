@@ -1,11 +1,13 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Observable } from 'rxjs/Observable';
+import {HttpClient} from '@angular/common/http';
 import 'rxjs/add/operator/map'
 
 export class AutenticacionService{
     
-    constructor(private http: HttpClient) { }
+    constructor(public http: HttpClient) {
+        console.log('Hello RestServiceProvider Provider');
+      }
 
     login(email: string, password: string) {
         return this.http.post<any>('http://localhost/loginExample/src/rest/login.php', { email: email, password: password })

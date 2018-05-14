@@ -10,6 +10,8 @@ import { OnLinePage } from '../pages/on-line/on-line';
 import { IniciarSesionPage } from '../pages/iniciar-sesion/iniciar-sesion';
 //import firebase from 'firebase';
 import { AutenticacionService } from '../servicios/autenticacion.service';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { AutenticacionService } from '../servicios/autenticacion.service';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -26,14 +26,7 @@ export class IniciarSesionPage {
               formulario.value.email,
               formulario.value.password)
               .subscribe(info => console.log('Usuario conectado'))
-              // .error(error =>{
-              //   let alerta = this.alertCtrl.create({
-              //     title: 'Ocurrió un error',
-              //     message: 'Ocurrió un error iniciando la sesión. ' + error,
-              //     buttons: ['ok']
-              //   })
-              //   alerta.present();
-              // })
+              
   }
 
   // registrarUsuario(formulario: NgForm){
